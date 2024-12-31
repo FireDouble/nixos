@@ -1,5 +1,4 @@
-{ ... }:
-{
+{...}: {
   imports = [
     ../../modules/home-manager/apps/apps.nix
     ../../modules/home-manager/cli/cli.nix

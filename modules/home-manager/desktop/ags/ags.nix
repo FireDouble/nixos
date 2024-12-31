@@ -4,9 +4,7 @@
   lib,
   config,
   ...
-}:
-
-{
+}: {
   imports = [
     inputs.ags.homeManagerModules.default
   ];
@@ -38,7 +36,7 @@
       matugen
       hyprpicker
       wl-clipboard
-      
+
       nerd-fonts.jetbrains-mono
     ];
 

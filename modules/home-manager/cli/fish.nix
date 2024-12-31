@@ -3,9 +3,7 @@
   config,
   pkgs,
   ...
-}:
-
-{
+}: {
   options = {
     fish.enable = lib.mkEnableOption "Enable fish config";
   };

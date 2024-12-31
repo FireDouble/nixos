@@ -1,6 +1,4 @@
-{ lib, ... }:
-
-{
+{lib, ...}: {
   imports = [
     ./steam.nix
     ./heroic.nix

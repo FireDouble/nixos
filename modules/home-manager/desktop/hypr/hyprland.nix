@@ -4,9 +4,7 @@
   lib,
   config,
   ...
-}:
-
-{
+}: {
   options = {
     hyprland.enable = lib.mkEnableOption "Enable Hyprland";
   };
@@ -20,7 +18,7 @@
 
     xdg.portal = {
       enable = true;
-      configPackages = [ config.wayland.windowManager.hyprland.package ];
+      configPackages = [config.wayland.windowManager.hyprland.package];
       extraPortals = [
         pkgs.xdg-desktop-portal-gtk
         inputs.hyprland.packages.${pkgs.system}.xdg-desktop-portal-hyprland
@@ -152,7 +150,6 @@
 
         bind =
           [
-
             "$mainMod, C, killactive"
             "$mainMod SHIFT, M, exit"
 
@@ -184,7 +181,6 @@
             ", XF86AudioLowerVolume, exec, ${pkgs.pamixer}/bin/pamixer -d 5"
             ", XF86AudioRaiseVolume, exec, ${pkgs.pamixer}/bin/pamixer -i 5"
             ", XF86AudioMute, exec, ${pkgs.pamixer}/bin/pamixer -t"
-
           ]
           ++ map (n: "$mainMod SHIFT, ${toString n}, movetoworkspacesilent, ${toString n}") [
             1

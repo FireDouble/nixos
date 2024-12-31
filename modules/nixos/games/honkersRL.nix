@@ -3,10 +3,8 @@
   lib,
   config,
   ...
-}:
-
-{
-  imports = [ inputs.aagl.nixosModules.default ];
+}: {
+  imports = [inputs.aagl.nixosModules.default];
   options = {
     honkers.enable = lib.mkEnableOption "Enable Honkers Railway Launcher";
   };

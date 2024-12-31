@@ -7,9 +7,7 @@
   pkgs,
   modulesPath,
   ...
-}:
-
-{
+}: {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
@@ -22,9 +20,9 @@
     "usbhid"
     "sd_mod"
   ];
-  boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ "kvm-amd" ];
-  boot.extraModulePackages = [ ];
+  boot.initrd.kernelModules = [];
+  boot.kernelModules = ["kvm-amd"];
+  boot.extraModulePackages = [];
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/437e7299-04ac-411c-bbd7-ff79ae8c3ce3";
@@ -43,7 +41,7 @@
   fileSystems."/mnt/ssd" = {
     device = "/dev/disk/by-uuid/ca8ca349-0580-4bfd-b161-073204e08a68";
     fsType = "ext4";
-    options = [ "nofail" ];
+    options = ["nofail"];
   };
 
   swapDevices = [

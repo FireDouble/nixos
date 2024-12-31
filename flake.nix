@@ -20,6 +20,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nvf = {
+      url = "github:notashelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -47,19 +52,17 @@
     catppuccin.url = "github:catppuccin/nix";
   };
 
-  outputs =
-    { nixpkgs, ... }@inputs:
-    {
-      nixosConfigurations = {
-        nyx = nixpkgs.lib.nixosSystem {
-          specialArgs = {
-            inherit inputs;
-          };
-          modules = [
-            ./hosts/nyx/configuration.nix
-            inputs.home-manager.nixosModules.default
-          ];
+  outputs = {nixpkgs, ...} @ inputs: {
+    nixosConfigurations = {
+      nyx = nixpkgs.lib.nixosSystem {
+        specialArgs = {
+          inherit inputs;
         };
+        modules = [
+          ./hosts/nyx/configuration.nix
+          inputs.home-manager.nixosModules.default
+        ];
       };
     };
+  };
 }

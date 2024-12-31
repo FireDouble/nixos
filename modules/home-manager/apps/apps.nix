@@ -1,6 +1,4 @@
-{ lib, ... }:
-
-{
+{lib, ...}: {
   imports = [
     ./firefox/firefox.nix
     ./wezterm/wezterm.nix

@@ -3,8 +3,7 @@
   inputs,
   lib,
   ...
-}:
-{
+}: {
   nix = {
     package = pkgs.lix;
     settings = {
@@ -26,8 +25,6 @@
 
   heroic.enable = lib.mkForce false;
 
-
-
   environment.systemPackages = with pkgs; [
     home-manager
 
@@ -40,6 +37,7 @@
     blueman
 
     # Cli tools
+    alejandra
     git
     unzip
     fastfetch
@@ -62,7 +60,6 @@
     };
   };
 
-
   ###############
   # DANGER ZONE #
   ###############
@@ -79,7 +76,6 @@
 
     kernelPackages = pkgs.linuxPackages_latest;
   };
-
 
   networking.hostName = "nyx";
 
@@ -138,7 +134,7 @@
   };
 
   xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
 
   users.users.shizu = {
     isNormalUser = true;
