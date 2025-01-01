@@ -36,7 +36,7 @@
           "ags"
           "blueman-applet"
 
-          "hyprctl setcursor catppuccin-mocha-lavender 24"
+          "hyprctl setcursor Catppuccin Mocha Lavender 24"
         ];
 
         "$mainMod" = "SUPER";
