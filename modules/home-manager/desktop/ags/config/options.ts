@@ -50,8 +50,8 @@ const options = mkOptions(OPTIONS, {
         },
 
         shadows: opt(true),
-        padding: opt(7),
-        spacing: opt(12),
+        padding: opt(5),
+        spacing: opt(5),
         radius: opt(11),
     },
 
@@ -117,7 +117,7 @@ const options = mkOptions(OPTIONS, {
         },
         taskbar: {
             iconSize: opt(0),
-            monochrome: opt(true),
+            monochrome: opt(false),
             exclusive: opt(false),
         },
         messages: {
@@ -137,7 +137,7 @@ const options = mkOptions(OPTIONS, {
             length: opt(40),
         },
         powermenu: {
-            monochrome: opt(false),
+            monochrome: opt(true),
             action: opt(() => App.toggleWindow("powermenu")),
         },
     },
@@ -167,8 +167,8 @@ const options = mkOptions(OPTIONS, {
 
     overview: {
         scale: opt(9),
-        workspaces: opt(7),
-        monochromeIcon: opt(true),
+        workspaces: opt(5),
+        monochromeIcon: opt(false),
     },
 
     powermenu: {
