@@ -40,6 +40,7 @@
           autopairs.nvim-autopairs.enable = true;
           binds.whichKey.enable = true;
           comments.comment-nvim.enable = true;
+          filetree.neo-tree.enable = true;
           git.vim-fugitive.enable = true;
           utility.motion.precognition.enable = true;
 
@@ -52,7 +53,12 @@
             {
               key = "<C-m>";
               mode = ["n"];
-              action = ":Explore<CR>:set relativenumber<CR>";
+              action = ":Neotree<CR>";
+            }
+            {
+              key = "M";
+              mode = ["n"];
+              action = ":Neotree close<CR>";
             }
           ];
 
