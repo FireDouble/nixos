@@ -11,8 +11,6 @@
 
   config = lib.mkIf config.hyprland.enable {
     home.packages = with pkgs; [
-      swww
-
       nerd-fonts.jetbrains-mono
     ];
 
@@ -32,11 +30,10 @@
 
       settings = {
         exec-once = [
-          "swww-daemon"
+          "${pkgs.swww}/bin/swww-daemon"
           "ags"
-          "blueman-applet"
 
-          "hyprctl setcursor Catppuccin Mocha Lavender 24"
+          "hyprctl setcursor Catppuccin Mocha Lavender 32"
         ];
 
         "$mainMod" = "SUPER";

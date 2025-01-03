@@ -23,33 +23,6 @@
     inputs.home-manager.nixosModules.home-manager
   ];
 
-  heroic.enable = lib.mkForce false;
-
-  environment.systemPackages = with pkgs; [
-    home-manager
-
-    # Desktop
-    catppuccin-cursors.mochaLavender
-    nwg-look
-
-    # Service gui
-    pavucontrol
-    blueman
-
-    # Cli tools
-    alejandra
-    git
-    unzip
-    fastfetch
-    fzf
-
-    # Apps
-    prismlauncher
-    vscode
-    vesktop
-    gimp
-  ];
-
   programs = {
     fish.enable = true;
     direnv.enable = true;
@@ -59,6 +32,11 @@
       xwayland.enable = true;
     };
   };
+
+
+  environment.systemPackages = with pkgs; [
+    home-manager
+  ];
 
   ###############
   # DANGER ZONE #
