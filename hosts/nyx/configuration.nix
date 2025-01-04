@@ -18,6 +18,8 @@
     ./hardware-configuration.nix
 
     ../../modules/nixos/games/default.nix
+    ../../modules/nixos/services/default.nix
+    ../../modules/nixos/system/default.nix
 
     ../../modules/nixos/themes/catppuccin.nix
     inputs.home-manager.nixosModules.home-manager
@@ -33,86 +35,23 @@
     };
   };
 
-
-  environment.systemPackages = with pkgs; [
-    home-manager
-  ];
-
   ###############
   # DANGER ZONE #
   ###############
 
-  boot = {
-    tmp.cleanOnBoot = true;
-    loader = {
-      systemd-boot = {
-        enable = true;
-        configurationLimit = 5;
-      };
-      efi.canTouchEfiVariables = true;
-    };
-
-    kernelPackages = pkgs.linuxPackages_latest;
+  networking = {
+    hostName = "nyx";
+    networkmanager.enable = true;
   };
-
-  networking.hostName = "nyx";
-
-  networking.networkmanager.enable = true;
 
   time.timeZone = "Europe/Warsaw";
 
-  i18n.defaultLocale = "en_US.UTF-8";
-
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_US.UTF-8";
-    LC_IDENTIFICATION = "en_US.UTF-8";
-    LC_MEASUREMENT = "en_US.UTF-8";
-    LC_MONETARY = "en_US.UTF-8";
-    LC_NAME = "en_US.UTF-8";
-    LC_NUMERIC = "en_US.UTF-8";
-    LC_PAPER = "en_US.UTF-8";
-    LC_TELEPHONE = "en_US.UTF-8";
-    LC_TIME = "en_US.UTF-8";
-  };
-
-  system.autoUpgrade = {
+  xdg.portal = {
     enable = true;
-    flake = inputs.self.outPath;
-    flags = [
-      "--update-input"
-      "nixpkgs"
-      "-L"
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
     ];
-    dates = "09:00";
-    randomizedDelaySec = "45min";
   };
-
-  services = {
-    xserver = {
-      enable = true;
-      displayManager.gdm.enable = true;
-      desktopManager.gnome.enable = true;
-      xkb = {
-        layout = "us";
-        variant = "";
-      };
-    };
-
-    printing.enable = true;
-  };
-
-  hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    jack.enable = true;
-  };
-
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
 
   users.users.shizu = {
     isNormalUser = true;
@@ -122,9 +61,11 @@
       "wheel"
     ];
     shell = pkgs.fish;
-    packages = [
-    ];
   };
+
+  environment.systemPackages = with pkgs; [
+    home-manager
+  ];
 
   home-manager = {
     useGlobalPkgs = true;
@@ -136,12 +77,6 @@
     users = {
       shizu = import ./home.nix;
     };
-  };
-
-  zramSwap = {
-    enable = true;
-    algorithm = "zstd";
-    memoryPercent = 75;
   };
 
   nixpkgs.config.allowUnfree = true;

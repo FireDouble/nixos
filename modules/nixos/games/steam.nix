@@ -5,14 +5,10 @@
   ...
 }: {
   options = {
-    steam.enable = lib.mkEnableOption "Enable Steam";
+    steam.enable = lib.mkEnableOption "Enable steam";
   };
 
   config = lib.mkIf config.steam.enable {
-    environment.systemPackages = with pkgs; [
-      protonup-qt
-    ];
-
     programs = {
       steam = {
         enable = true;

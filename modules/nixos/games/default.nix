@@ -1,9 +1,9 @@
 {lib, ...}: {
   imports = [
     ./steam.nix
-    ./honkersRL.nix
+    ./hrl.nix
   ];
 
-  honkers.enable = lib.mkDefault true;
+  hrl.enable = lib.mkDefault true;
   steam.enable = lib.mkDefault true;
 }
