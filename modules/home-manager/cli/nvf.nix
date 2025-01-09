@@ -29,7 +29,6 @@
               enable = true;
               lsp.enable = true;
               format.enable = true;
-              extraDiagnostics.enable = true;
             };
           };
 
@@ -46,19 +45,14 @@
 
           keymaps = [
             {
-              key = "m";
+              key = "M";
               mode = ["n"];
               action = ":Telescope find_files<CR>";
             }
             {
               key = "<C-m>";
               mode = ["n"];
-              action = ":Neotree<CR>";
-            }
-            {
-              key = "M";
-              mode = ["n"];
-              action = ":Neotree close<CR>";
+              action = ":Neotree toggle<CR>";
             }
           ];
 

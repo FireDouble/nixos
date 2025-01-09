@@ -1,3 +1,1 @@
-modules/home-manager/desktop/ags/config/** linguist-vendored
-modules/home-manager/apps/firefox/config/** linguist-vendored
-modules/home-manager/apps/wezterm/config/** linguist-vendored
+**/config/** linguist-vendored

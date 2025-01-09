@@ -29,14 +29,21 @@
       package = inputs.hyprland.packages."${pkgs.system}".hyprland;
 
       settings = {
+        "$mainMod" = "SUPER";
+        "$terminal" = "${inputs.wezterm.packages.${pkgs.system}.default}/bin/wezterm";
+        "$file_manager" = "$terminal start --new-tab ${pkgs.lf}/bin/lf";
+        "$browser" = "${pkgs.firefox}/bin/firefox";
+        "$discord" = "${pkgs.vesktop}/bin/vesktop";
+        "$screenshot" = "${pkgs.grimblast}/bin/grimblast --freeze --wait 1 copy area";
+        "$color_picker" = "${pkgs.hyprpicker}/bin/hyprpicker -a -r";
+        "$lock_screen" = "${pkgs.hyprlock}/bin/hyprlock";
+
         exec-once = [
           "${pkgs.swww}/bin/swww-daemon"
           "ags"
 
           "hyprctl setcursor Catppuccin Mocha Lavender 32"
         ];
-
-        "$mainMod" = "SUPER";
 
         input = {
           kb_layout = "us, pl";
@@ -134,8 +141,8 @@
 
         workspace = [
           "1, monitor:DP-2, persistent:true"
-          "2, monitor:HDMI-A-1, persistent:true, on-created-empty:${pkgs.firefox}/bin/firefox"
-          "3, monitor:HDMI-A-1, persistent:true, on-created-empty:${pkgs.vesktop}/bin/vesktop"
+          "2, monitor:HDMI-A-1, persistent:true, on-created-empty:$browser"
+          "3, monitor:HDMI-A-1, persistent:true, on-created-empty:$discord"
           "4, monitor:HDMI-A-1, persistent:true"
           "5, monitor:HDMI-A-1, persistent:true"
         ];
@@ -150,13 +157,13 @@
             "$mainMod, C, killactive"
             "$mainMod SHIFT, M, exit"
 
-            "$mainMod, S, exec, ${pkgs.grimblast}/bin/grimblast --freeze --wait 1 copy area"
-            "$mainMod SHIFT, S, exec, ${pkgs.hyprpicker}/bin/hyprpicker -a -r"
-            "$mainMod, L, exec, ${pkgs.hyprlock}/bin/hyprlock"
-            "$mainMod, E, exec, ${pkgs.nautilus}/bin/nautilus"
-            "$mainMod, B, exec, ${pkgs.firefox}/bin/firefox"
-            "$mainMod, V, exec, ${pkgs.vesktop}/bin/vesktop"
-            "$mainMod, Q, exec, wezterm"
+            "$mainMod, S, exec, $screenshot"
+            "$mainMod SHIFT, S, exec, $color_picker"
+            "$mainMod, L, exec, $lock_screen"
+            "$mainMod, E, exec, $file_manager"
+            "$mainMod, B, exec, $browser"
+            "$mainMod, V, exec, $discord"
+            "$mainMod, Q, exec, $terminal"
 
             "$mainMod, SPACE, exec, ags -t launcher"
             "$mainMod, Y, exec, ags -t overview"
