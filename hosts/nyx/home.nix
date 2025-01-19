@@ -9,7 +9,6 @@
     # Service GUIs
     pavucontrol
     blueman
-    gnome-control-center
 
     # Desktop
     swww
@@ -24,7 +23,7 @@
 
     # Apps
     prismlauncher
-    # heroic
+    heroic
     vscode
     vesktop
     gimp

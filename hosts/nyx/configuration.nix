@@ -22,8 +22,12 @@
     ../../modules/nixos/system/default.nix
 
     ../../modules/nixos/themes/catppuccin.nix
+
+    inputs.aagl.nixosModules.default
     inputs.home-manager.nixosModules.home-manager
   ];
+
+  programs.honkers-railway-launcher.enable = true;
 
   programs = {
     fish.enable = true;

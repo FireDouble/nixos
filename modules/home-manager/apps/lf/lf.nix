@@ -63,6 +63,7 @@
 
         gd = "cd ~/Downloads";
         gc = "cd ~/nixos";
+        gs = "cd ~/ssd/shizu";
 
         "." = "set hidden!";
       };

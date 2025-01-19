@@ -25,10 +25,16 @@
           };
 
           languages = {
+            enableTreesitter = true;
             nix = {
               enable = true;
               lsp.enable = true;
               format.enable = true;
+            };
+
+            go = {
+              enable = true;
+              lsp.enable = true;
             };
           };
 
@@ -41,6 +47,7 @@
           comments.comment-nvim.enable = true;
           filetree.neo-tree.enable = true;
           git.vim-fugitive.enable = true;
+          statusline.lualine.enable = true;
           utility.motion.precognition.enable = true;
 
           keymaps = [
@@ -62,7 +69,10 @@
             style = "mocha";
           };
 
-          statusline.lualine.enable = true;
+          options = {
+            shiftwidth = 4;
+            tabstop = 4;
+          };
         };
       };
     };
