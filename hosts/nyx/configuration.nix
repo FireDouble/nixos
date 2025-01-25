@@ -17,9 +17,9 @@
   imports = [
     ./hardware-configuration.nix
 
-    ../../modules/nixos/games/default.nix
-    ../../modules/nixos/services/default.nix
-    ../../modules/nixos/system/default.nix
+    ../../modules/nixos/games
+    ../../modules/nixos/services
+    ../../modules/nixos/system
 
     ../../modules/nixos/themes/catppuccin.nix
 

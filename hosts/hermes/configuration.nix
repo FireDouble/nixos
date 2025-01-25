@@ -2,7 +2,6 @@
   pkgs,
   inputs,
   lib,
-  modulesPath,
   ...
 }: {
   nix = {
@@ -16,48 +15,36 @@
   };
 
   imports = [
-    "${modulesPath}/installer/cd-dvd/installation-cd-minimal.nix"
+    ./hardware-configuration.nix
 
     ../../modules/nixos/services
     ../../modules/nixos/system
 
     ../../modules/nixos/themes/catppuccin.nix
+
+    inputs.home-manager.nixosModules.home-manager
   ];
 
+  gnome.enable = lib.mkForce false;
   zram.enable = lib.mkForce false;
-  locales.enable = lib.mkForce false;
-
 
   programs = {
     fish.enable = true;
     direnv.enable = true;
+
+    hyprland = {
+      enable = true;
+      xwayland.enable = true;
+    };
   };
-
-  environment.systemPackages = with pkgs; [
-    # Cli tools
-    git
-    neovim
-
-    # Apps
-    gparted
-    vesktop
-    vscode
-
-    # The installers
-    arch-install-scripts # Arch
-    dnf5 # Fedora
-    debootstrap # Debin and ubuntu
-    apt # Ubuntu
-  ];
 
   ###############
   # DANGER ZONE #
   ###############
 
   networking = {
-    hostName = "artemis";
+    hostName = "hermes";
     networkmanager.enable = true;
-    wireless.enable = lib.mkForce false;
   };
 
   time.timeZone = "Europe/Warsaw";
@@ -69,10 +56,33 @@
     ];
   };
 
-  nixpkgs = {
-    hostPlatform = "x86_64-linux";
-    config.allowUnfree = true;
+  users.users.shizu = {
+    isNormalUser = true;
+    description = "Shizu";
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
+    shell = pkgs.fish;
   };
+
+  environment.systemPackages = with pkgs; [
+    home-manager
+  ];
+
+  home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    extraSpecialArgs = {
+      inherit inputs;
+    };
+    backupFileExtension = "bak";
+    users = {
+      shizu = import ./home.nix;
+    };
+  };
+
+  nixpkgs.config.allowUnfree = true;
 
   system.stateVersion = "24.05";
 }

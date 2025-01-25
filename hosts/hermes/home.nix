@@ -19,15 +19,10 @@
     alejandra
     git
     unzip
-    fastfetch
 
     # Apps
-    prismlauncher
-    heroic
     vscode
     vesktop
-    gimp
-    anki
   ];
 
   home = {

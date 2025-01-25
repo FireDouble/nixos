@@ -16,6 +16,9 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    hyprland.url = "github:hyprwm/Hyprland";
+    wezterm.url = "github:wez/wezterm?dir=nix";
+    catppuccin.url = "github:catppuccin/nix";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -27,13 +30,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nixvim = {
-      url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    hyprland.url = "github:hyprwm/Hyprland";
-
     ags = {
       url = "github:Aylur/ags/v1";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -44,14 +40,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    wezterm.url = "github:wez/wezterm?dir=nix";
-
     aagl = {
       url = "github:ezKEa/aagl-gtk-on-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    catppuccin.url = "github:catppuccin/nix";
   };
 
   outputs = {nixpkgs, ...} @ inputs: {
@@ -63,6 +55,15 @@
         modules = [
           ./hosts/nyx/configuration.nix
           inputs.home-manager.nixosModules.default
+        ];
+      };
+      
+      hermes = nixpkgs.lib.nixosSystem {
+        specialArgs = {
+          inherit inputs;
+        };
+        modules = [
+          ./hosts/hermes/configuration.nix
         ];
       };
 
