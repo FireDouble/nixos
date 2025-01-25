@@ -16,9 +16,6 @@
       pkgs.nerd-fonts.jetbrains-mono
     ];
 
-    xdg.configFile."wezterm" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/home/shizu/nixos/modules/home-manager/apps/wezterm/config";
-      recursive = true;
-    };
+    xdg.configFile."wezterm".source = ./config;
   };
 }

@@ -1,8 +1,8 @@
 {pkgs, ...}: {
   imports = [
-    ../../modules/home-manager/apps
-    ../../modules/home-manager/cli
-    ../../modules/home-manager/desktop
+    ../../modules/home/apps
+    ../../modules/home/cli
+    ../../modules/home/desktop
   ];
 
   home.packages = with pkgs; [
