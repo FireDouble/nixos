@@ -22,8 +22,8 @@
     fastfetch
 
     # Apps
-    prismlauncher
-    heroic
+    # prismlauncher
+    # heroic
     vscode
     vesktop
     gimp
