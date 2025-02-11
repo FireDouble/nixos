@@ -32,7 +32,17 @@
               format.enable = true;
             };
 
-            go = {
+            rust = {
+              enable = true;
+              lsp.enable = true;
+            };
+
+            svelte = {
+              enable = true;
+              lsp.enable = true;
+            };
+
+            ts = {
               enable = true;
               lsp.enable = true;
             };
@@ -73,6 +83,17 @@
             shiftwidth = 4;
             tabstop = 4;
           };
+
+          luaConfigPost = ''
+            vim.api.nvim_create_autocmd("FileType", {
+              pattern = "nix",
+              callback = function(opts)
+                local bo = vim.bo[opts.buf]
+                bo.tabstop = 2
+                bo.shiftwidth = 2
+              end
+            })
+          '';
         };
       };
     };
