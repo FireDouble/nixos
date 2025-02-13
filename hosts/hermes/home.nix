@@ -22,7 +22,7 @@
 
     # Apps
     vscode
-    vesktop
+    vesktop-git
   ];
 
   home = {

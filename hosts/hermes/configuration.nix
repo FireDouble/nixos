@@ -13,7 +13,11 @@
       ];
     };
   };
-
+  
+  nixpkgs.overlays = [
+    inputs.haipkgs.overlays.default
+  ];
+  
   imports = [
     ./hardware-configuration.nix
 

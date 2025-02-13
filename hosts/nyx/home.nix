@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   imports = [
     ../../modules/home/apps
     ../../modules/home/cli
@@ -25,9 +29,9 @@
     # prismlauncher
     # heroic
     vscode
-    vesktop
     gimp
     anki
+    vesktop-git
   ];
 
   home = {

@@ -10,8 +10,8 @@
   };
 
   config = lib.mkIf config.wezterm.enable {
-    home.packages = [
-      inputs.wezterm.packages.${pkgs.system}.default
+    home.packages = with pkgs; [
+      wezterm-git
 
       pkgs.nerd-fonts.jetbrains-mono
     ];

@@ -14,7 +14,11 @@
       ];
     };
   };
-
+  
+  nixpkgs.overlays = [
+    inputs.haipkgs.overlays.default
+  ];
+  
   imports = [
     "${modulesPath}/installer/cd-dvd/installation-cd-minimal.nix"
 
@@ -40,7 +44,7 @@
 
     # Apps
     gparted
-    vesktop
+    vesktop-git
     vscode
 
     # The installers

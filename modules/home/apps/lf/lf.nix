@@ -18,7 +18,7 @@
         editor-open = ''$$EDITOR $f'';
         terminal-open = ''
           ''${{
-              nohup ${inputs.wezterm.packages.${pkgs.system}.default}/bin/wezterm start --new-tab --cwd $(dirname $f) | rm nohup.out &
+              nohup ${pkgs.wezterm-git}/bin/wezterm start --new-tab --cwd $(dirname $f) | rm nohup.out &
             }}
         '';
 

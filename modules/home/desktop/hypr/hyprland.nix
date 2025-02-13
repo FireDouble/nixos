@@ -10,10 +10,6 @@
   };
 
   config = lib.mkIf config.hyprland.enable {
-    home.packages = with pkgs; [
-      nerd-fonts.jetbrains-mono
-    ];
-
     xdg.portal = {
       enable = true;
       configPackages = [config.wayland.windowManager.hyprland.package];
@@ -25,14 +21,13 @@
     wayland.windowManager.hyprland = {
       enable = true;
       xwayland.enable = true;
-      package = inputs.hyprland.packages."${pkgs.system}".hyprland;
 
       settings = {
         "$mainMod" = "SUPER";
-        "$terminal" = "${inputs.wezterm.packages.${pkgs.system}.default}/bin/wezterm";
+        "$terminal" = "${pkgs.wezterm-git}/bin/wezterm";
         "$file_manager" = "$terminal start --new-tab ${pkgs.lf}/bin/lf";
         "$browser" = "${pkgs.firefox}/bin/firefox";
-        "$discord" = "${pkgs.vesktop}/bin/vesktop";
+        "$discord" = "${pkgs.vesktop-git}/bin/vesktop";
         "$screenshot" = "${pkgs.grimblast}/bin/grimblast --freeze --wait 1 copy area";
         "$color_picker" = "${pkgs.hyprpicker}/bin/hyprpicker -a -r";
         "$lock_screen" = "${pkgs.hyprlock}/bin/hyprlock";

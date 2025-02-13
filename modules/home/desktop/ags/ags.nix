@@ -36,8 +36,6 @@
       matugen
       hyprpicker
       wl-clipboard
-
-      nerd-fonts.jetbrains-mono
     ];
 
     fonts.fontconfig.enable = true;
