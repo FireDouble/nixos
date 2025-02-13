@@ -54,16 +54,16 @@ c.window_padding = { left = 10, right = 0, top = 0, bottom = 0 }
 c.adjust_window_size_when_changing_font_size = false
 
 -- fonts
--- c.font = wezterm.font_with_fallback({
---   "Jetbrains Mono",
---   "Maple Mono",
--- })
+c.font = wezterm.font_with_fallback({
+  "Maple Mono",
+  "Symbols Nerd Font",
+})
 c.font_size = 13
 c.adjust_window_size_when_changing_font_size = false
--- c.window_frame = {
---   font = wezterm.font("Jetbrains Mono"),
---   font_size = c.font_size,
--- }
+c.window_frame = {
+  font = wezterm.font("Maple Mono"),
+  font_size = c.font_size,
+}
 
 -- QOL
 c.audible_bell = "Disabled"

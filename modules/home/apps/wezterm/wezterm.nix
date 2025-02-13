@@ -13,7 +13,7 @@
     home.packages = with pkgs; [
       wezterm-git
 
-      pkgs.nerd-fonts.jetbrains-mono
+      maple-mono
     ];
 
     xdg.configFile."wezterm".source = ./config;
