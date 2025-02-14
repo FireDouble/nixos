@@ -70,11 +70,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1739399387,
-        "narHash": "sha256-7oXm3SXUZLwLG9ks5SWOZJTmogocrTXM1SVTFZ9xrno=",
+        "lastModified": 1739457209,
+        "narHash": "sha256-aIFi91DhSVtsiinX3OmjHIhBmkA6VKwQZf7RRgaHScw=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "4d32808bd51c7349ce036b7a037fb56d5e7c06ae",
+        "rev": "5ff0742fc6c2156e8d9b0fbb43678b0d3e8ce578",
         "type": "gitlab"
       },
       "original": {
@@ -194,11 +194,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1739470114,
-        "narHash": "sha256-b81KYVs8xcKkvPcp6NnU+qTAJfHpdOYB8DtTWXoh0bg=",
+        "lastModified": 1739481658,
+        "narHash": "sha256-S3CxOkph24KRX0hlQ1NZ1zOfsNZD1tYZm3WJymovCBg=",
         "ref": "refs/heads/main",
-        "rev": "d06a4b4bed4335098a757c46ad8f0310d893e980",
-        "revCount": 59,
+        "rev": "eddd0fcef070e93ba4109a5b1a73053b8ce2f2e8",
+        "revCount": 60,
         "type": "git",
         "url": "https://git.blahai.gay/blahai/haipkgs.git"
       },
@@ -231,11 +231,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1739381933,
-        "narHash": "sha256-4gvobxITgcrNGfwsVG5a46QzQCX89btIYw23p0ilbcc=",
+        "lastModified": 1739470101,
+        "narHash": "sha256-NxNe32VB4XI/xIXrsKmIfrcgtEx5r/5s52pL3CpEcA4=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "15b59d4191b993ebdfcb1f61b834fced217882ba",
+        "rev": "5031c6d2978109336637977c165f82aa49fa16a7",
         "type": "github"
       },
       "original": {
@@ -332,11 +332,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1739214665,
-        "narHash": "sha256-26L8VAu3/1YRxS8MHgBOyOM8xALdo6N0I04PgorE7UM=",
+        "lastModified": 1739446958,
+        "narHash": "sha256-+/bYK3DbPxMIvSL4zArkMX0LQvS7rzBKXnDXLfKyRVc=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "64e75cd44acf21c7933d61d7721e812eac1b5a0a",
+        "rev": "2ff53fe64443980e139eaa286017f53f88336dd0",
         "type": "github"
       },
       "original": {
@@ -391,11 +391,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1739361262,
-        "narHash": "sha256-wJkh9T6lqiLlo5de27FABu3P4wIZgfRwQUpLrLE7WRU=",
+        "lastModified": 1739459833,
+        "narHash": "sha256-/ZHSgz+PX84/1AaTi0EUt4bMz80TwE4n68IpwSm5chQ=",
         "owner": "notashelf",
         "repo": "nvf",
-        "rev": "6e7e91fc111218917d67b9ee44f718633bddac33",
+        "rev": "e49228d642b82d6e840fe9b041c4b05d267d0b58",
         "type": "github"
       },
       "original": {
@@ -553,11 +553,11 @@
       },
       "locked": {
         "dir": "nix",
-        "lastModified": 1739385581,
-        "narHash": "sha256-XD8hIAPiBFZgIzQP4ejeabjDCXbwO3S0kaLdoLLiEjs=",
+        "lastModified": 1739478829,
+        "narHash": "sha256-zUAt4Ak3NHD3KNJ10ibJoP9zqQF5hdPIeP5mlFyU81o=",
         "owner": "wez",
         "repo": "wezterm",
-        "rev": "11505b7083cc098203f899b023f31fe41abff0bd",
+        "rev": "ee0c04e735fb94cb5119681f704fb7fa6731e713",
         "type": "github"
       },
       "original": {
