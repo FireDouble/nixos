@@ -70,11 +70,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1739843559,
-        "narHash": "sha256-JHwaxni5FEBoI0f6p+MAs5uDPvWLtMsjG6iD0UhfZHU=",
+        "lastModified": 1739909849,
+        "narHash": "sha256-BdW/c3AaLtjkF9tisUY4a7YWvKhj4qszwOnvUGXSN4Y=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "a79b59b9b3e6566da99df369666e2631c5ee6774",
+        "rev": "5d1218489601a269098a180203f4f6d4db3746b9",
         "type": "gitlab"
       },
       "original": {
@@ -194,11 +194,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1739836864,
-        "narHash": "sha256-rse0tFpjIryj1XWgVzvXHff/cIeOSBBAq9/okGvWrME=",
+        "lastModified": 1739923321,
+        "narHash": "sha256-SYbmfkNLbtH/bg1GuKOmpQVqF39i2xqi/0koWOIN6YA=",
         "ref": "refs/heads/main",
-        "rev": "4766a1ed9d876531873be02f76bce28f900b7a1c",
-        "revCount": 72,
+        "rev": "06a38823f1ffceee57535ddaa0ab75cfae3e36ee",
+        "revCount": 74,
         "type": "git",
         "url": "https://git.blahai.gay/blahai/haipkgs.git"
       },
@@ -231,11 +231,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1739842562,
-        "narHash": "sha256-XNvgSmdHHOhxQEHW/GFdaaXqcEcWdMXvLJyYyLmxciE=",
+        "lastModified": 1739913864,
+        "narHash": "sha256-WhzgQjadrwnwPJQLLxZUUEIxojxa7UWDkf7raAkB1Lw=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "69dfc316c5b5f2de1d68e477393fecbf19a0cdba",
+        "rev": "97ac0801d187b2911e8caa45316399de12f6f199",
         "type": "github"
       },
       "original": {
@@ -425,11 +425,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1739759407,
-        "narHash": "sha256-YIrVxD2SaUyaEdMry2nAd2qG1E0V38QIV6t6rpguFwk=",
+        "lastModified": 1739845646,
+        "narHash": "sha256-UGQVBU/yDn6u0kAE4z1PYrOaaf3wl+gAAv5rui2TkFQ=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "6e6ae2acf4221380140c22d65b6c41f4726f5932",
+        "rev": "ab2cd2b8b25ab3f65b8ce4aa701a6d69fbb0210f",
         "type": "github"
       },
       "original": {
