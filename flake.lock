@@ -194,11 +194,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1740441814,
-        "narHash": "sha256-IH9JwVgmjiYUUKhF9DiTUktsA1+9dZLeFj907RRonYI=",
+        "lastModified": 1740739559,
+        "narHash": "sha256-93WyzBp4c1BEiTof4qMVTGNNode26fXtd9IErMmH8jM=",
         "ref": "refs/heads/main",
-        "rev": "cd7785fab6882ad1465d795563a2338c4ab6bea9",
-        "revCount": 99,
+        "rev": "b9b592493416d6f93fa4aa5d959814d4edf88be5",
+        "revCount": 101,
         "type": "git",
         "url": "https://git.blahai.gay/blahai/haipkgs.git"
       },
@@ -332,11 +332,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1740560979,
-        "narHash": "sha256-Vr3Qi346M+8CjedtbyUevIGDZW8LcA1fTG0ugPY/Hic=",
+        "lastModified": 1740695751,
+        "narHash": "sha256-D+R+kFxy1KsheiIzkkx/6L63wEHBYX21OIwlFV8JvDs=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "5135c59491985879812717f4c9fea69604e7f26f",
+        "rev": "6313551cd05425cd5b3e63fe47dbc324eabb15e4",
         "type": "github"
       },
       "original": {
