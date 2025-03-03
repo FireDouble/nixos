@@ -70,11 +70,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1740845582,
-        "narHash": "sha256-xBB+pu0ad3h8t6giN6iMF/CF12jb//R3w38VdXVMXY4=",
+        "lastModified": 1740888229,
+        "narHash": "sha256-1MU1oKjUuClivWTvJRIdWphLRoY8EByHgt2nr4IpwtA=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "5ac661a499a1e3315cd4eb75b3dbba3caa940f14",
+        "rev": "1e46c2a53468ce23870a510123f5c4b4702f16b1",
         "type": "gitlab"
       },
       "original": {
@@ -194,11 +194,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1740874009,
-        "narHash": "sha256-cPccQcL57R69J++KjlfnNnVzZNrXv2JZAnmjI3L4Pe0=",
+        "lastModified": 1740949597,
+        "narHash": "sha256-CcexpjSqmbfowTxi7HyegajingFQgJnQSp9ejpNxwRs=",
         "ref": "refs/heads/main",
-        "rev": "89fd18286095ff9cd1418188ce2eb46a156f2894",
-        "revCount": 103,
+        "rev": "3b6d33a2a2367ae074e728c111d064e9831710db",
+        "revCount": 114,
         "type": "git",
         "url": "https://git.blahai.gay/blahai/haipkgs.git"
       },
@@ -332,11 +332,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1740695751,
-        "narHash": "sha256-D+R+kFxy1KsheiIzkkx/6L63wEHBYX21OIwlFV8JvDs=",
+        "lastModified": 1740828860,
+        "narHash": "sha256-cjbHI+zUzK5CPsQZqMhE3npTyYFt9tJ3+ohcfaOF/WM=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "6313551cd05425cd5b3e63fe47dbc324eabb15e4",
+        "rev": "303bd8071377433a2d8f76e684ec773d70c5b642",
         "type": "github"
       },
       "original": {
@@ -391,11 +391,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1740837291,
-        "narHash": "sha256-7quiOr41CSlv3XuxYyeqKq2xTKOeVFgeidywtsWj9/I=",
+        "lastModified": 1740938036,
+        "narHash": "sha256-KDc+kDDX9s8c574sx7idXVYTJM2WZElAk9qbgxrCnSo=",
         "owner": "notashelf",
         "repo": "nvf",
-        "rev": "749cc793e3b0401903c37a2629698067b833c441",
+        "rev": "f24189f1d2a7730b7fe87164bae40c2d0be8d3c9",
         "type": "github"
       },
       "original": {
