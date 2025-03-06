@@ -70,11 +70,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1741129638,
-        "narHash": "sha256-nXEs0doUakrIfZSJSy+bNEngfT5aYZAA54g3wT8KWuw=",
+        "lastModified": 1741219746,
+        "narHash": "sha256-0mIcUvCJabdessreADlExBUrmQ1iuZzN/HZmpl1qaLM=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "00bc7e76c510d12dd43cce9c69e337e936b8cb17",
+        "rev": "ea6ec552bfeabe8b49b16cfa7d5cb220f2b7592d",
         "type": "gitlab"
       },
       "original": {
@@ -194,11 +194,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1741077836,
-        "narHash": "sha256-YhhddxCM1zyyjDtox6ctlUk4rnXmfcNgzxH/MiHCZnQ=",
+        "lastModified": 1741219435,
+        "narHash": "sha256-vJ1O1/wCyGXFlS6wgjnc3pJRduMpTxzeBWNJ9qQ4xDk=",
         "ref": "refs/heads/main",
-        "rev": "400e96fe9f26d19e39153fe969497c6866fc01e6",
-        "revCount": 118,
+        "rev": "21f53c22ad580a9a2baf3142f98d9fca111374ab",
+        "revCount": 119,
         "type": "git",
         "url": "https://git.blahai.gay/blahai/haipkgs.git"
       },
@@ -231,11 +231,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1741128660,
-        "narHash": "sha256-GWaZ+KGxWYbOB15CSqktwngq0ccA1l2Ov3aUfl9jeY4=",
+        "lastModified": 1741217763,
+        "narHash": "sha256-g/TrltIjFHIjtzKY5CJpoPANfHQWDD43G5U1a/v5oVg=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "b1b964ea9348aef08cab514fa88e9c99def6fd63",
+        "rev": "486b066025dccd8af7fbe5dd2cc79e46b88c80da",
         "type": "github"
       },
       "original": {
