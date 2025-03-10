@@ -48,11 +48,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1741424456,
-        "narHash": "sha256-46m7KqjSoabM5JdqP8Om9+PWioRy0uU746MZuLyw/6o=",
+        "lastModified": 1741521711,
+        "narHash": "sha256-uV+olxh2H8GrB676m8lHpDujYVJ1K5rie6Y0GEFSMhI=",
         "owner": "catppuccin",
         "repo": "nix",
-        "rev": "dc7e553e91c37cec5083ac5cfaff6a28565d1334",
+        "rev": "62424ccd65e280f3739754e0f30b85c901f6bcd9",
         "type": "github"
       },
       "original": {
@@ -70,11 +70,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1741462124,
-        "narHash": "sha256-CPAkFMLGN9nFtHvWbfEdAM1KFCshr0raxhcWmjzh5Ek=",
+        "lastModified": 1741565748,
+        "narHash": "sha256-QXY3AOtd9nqcWw0itzBxFAB4pBwirJgdv6xwchFAbwM=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "0bbd4266c08de042ecf51e5fb356be915e839f10",
+        "rev": "f8836c90055694d8207fc21e9891a52f593a13b7",
         "type": "gitlab"
       },
       "original": {
@@ -194,11 +194,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1741478814,
-        "narHash": "sha256-B74589Q4AAs4jcFEDZs3R//G8DqCcrBLldcmdDD74xE=",
+        "lastModified": 1741565208,
+        "narHash": "sha256-nuCEASkxxZ6x8SVNT7f1PJJnAhqy+/NMa6UXWs7xGmk=",
         "ref": "refs/heads/main",
-        "rev": "7bfcea45857f8b8d705f8c74f08c448148b0fae6",
-        "revCount": 126,
+        "rev": "76555b22edb077bd0d27fd181bc6bfaa29ee5c67",
+        "revCount": 129,
         "type": "git",
         "url": "https://git.blahai.gay/blahai/haipkgs.git"
       },
@@ -231,11 +231,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1741461731,
-        "narHash": "sha256-BBQfGvO3GWOV+5tmqH14gNcZrRaQ7Q3tQx31Frzoip8=",
+        "lastModified": 1741563526,
+        "narHash": "sha256-FAJ7jIwFq1gxbxS+cdhtTxFM8eLWgP0jQGaVIvA/bug=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "7f4c60a3d6e548dbc13666565c22cb3f8dcdad44",
+        "rev": "597f9c2f06af8791b31c48ad05471ac5afbd0f0a",
         "type": "github"
       },
       "original": {
@@ -391,11 +391,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1741477095,
-        "narHash": "sha256-aiaCmDReL34ViSB7ArVq8vB2VdTDVft1+vKfWkWeyUo=",
+        "lastModified": 1741546504,
+        "narHash": "sha256-dtdj9RWtsIiSa0H6XDY3c9gXKMN22RxgIvQtMHArd3w=",
         "owner": "notashelf",
         "repo": "nvf",
-        "rev": "6576509cd559aec3da271d12fa911d04d44708ec",
+        "rev": "c8fd6204d02596462e354cf35b029cd6a86ce24b",
         "type": "github"
       },
       "original": {
@@ -554,11 +554,11 @@
       },
       "locked": {
         "dir": "nix",
-        "lastModified": 1741479669,
-        "narHash": "sha256-+ccfX+aAKLemwTKPRAB21OLKwCw0u4N1uWcw7thplN4=",
+        "lastModified": 1741559821,
+        "narHash": "sha256-LWD3DlXIRXnv5hS4i9Z84qIrwxMertI60TxmAc8veRw=",
         "owner": "wez",
         "repo": "wezterm",
-        "rev": "cdd70030ea1fe27d854a5d6235fcbf4b30fe7702",
+        "rev": "12b971ac44738f37c120160da165cd9072c0e6d2",
         "type": "github"
       },
       "original": {
