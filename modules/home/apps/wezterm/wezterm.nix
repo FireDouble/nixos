@@ -13,7 +13,8 @@
     home.packages = with pkgs; [
       wezterm-git
 
-      maple-mono
+      maple-mono.variable
+      maple-mono.NF
     ];
 
     xdg.configFile."wezterm".source = ./config;
