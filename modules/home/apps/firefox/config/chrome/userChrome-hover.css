@@ -12,7 +12,7 @@
 
 /* inner width = expanded width & move inner to only show initial-width long section */
 #sidebar-box #sidebar {
-    position: absolute !important;
+    /* position: absolute !important; */
     min-width: var(--sidebar-width) !important;
     max-width: var(--sidebar-width) !important;
     width: var(--sidebar-width) !important;
