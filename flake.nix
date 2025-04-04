@@ -16,7 +16,6 @@
     ];
   };
 
-
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     wezterm.url = "github:wez/wezterm?dir=nix";
@@ -24,9 +23,7 @@
 
     haipkgs = {
       url = "git+https://git.blahai.gay/blahai/haipkgs.git";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-      };
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     home-manager = {
