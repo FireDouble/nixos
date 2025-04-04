@@ -36,7 +36,7 @@
           "${pkgs.swww}/bin/swww-daemon"
           "ags"
 
-          "hyprctl setcursor Catppuccin Mocha Lavender 32"
+          "hyprctl setcursor Catppuccin Mocha Lavender 24"
         ];
 
         input = {
