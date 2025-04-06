@@ -30,8 +30,6 @@
     anki
     vesktop-git
     stremio
-
-    aseprite
   ];
 
   home = {
