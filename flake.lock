@@ -48,11 +48,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1750153510,
-        "narHash": "sha256-NYHXXJZ9m4fJpKk9tKn/EExX87SqcBcRINOGF7hKRLI=",
+        "lastModified": 1751021896,
+        "narHash": "sha256-L9u68mNPPiuW7+OV5BKbXaj/AENTiiuEx8+QnMBjRlU=",
         "owner": "catppuccin",
         "repo": "nix",
-        "rev": "4e95eaf8a351956d75cc400318579967ca2b6d0f",
+        "rev": "a6b0e34d083c79f08efabb1fd6ccf12b882daae6",
         "type": "github"
       },
       "original": {
@@ -89,11 +89,11 @@
       },
       "locked": {
         "dir": "pkgs/firefox-addons",
-        "lastModified": 1750910603,
-        "narHash": "sha256-lduFsIFA1ENJ9RLXbLec37Y1a0xxI+h3fwespT/PY0o=",
+        "lastModified": 1751043686,
+        "narHash": "sha256-kGbUMc4hww2Fe6DdCFy8Qnlspc4dLepa1L9SLh0LORg=",
         "owner": "rycee",
         "repo": "nur-expressions",
-        "rev": "ede87f397f6df2c6903a4bd8a753ccecf05c0378",
+        "rev": "8c101ae6d55115c7d4f12bffa932f30416dfd070",
         "type": "gitlab"
       },
       "original": {
@@ -198,11 +198,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1750983681,
-        "narHash": "sha256-PWoeceoT27UOuH8OdlUbTeQqN091tAtM4wkMNpPTZh0=",
+        "lastModified": 1751070020,
+        "narHash": "sha256-Y1k9oWv47r64PLMM4ProZcgZC/yRSd6U/VA6Uo8Wh70=",
         "owner": "blahai",
         "repo": "haipkgs",
-        "rev": "3453d991beffa63930ccdab6691d81dc6aedc26e",
+        "rev": "3ea41699eb034fdceeefaaee1f0f48fd204275a9",
         "type": "github"
       },
       "original": {
