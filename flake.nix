@@ -22,7 +22,12 @@
     catppuccin.url = "github:catppuccin/nix";
 
     haipkgs = {
-      url = "git+https://git.blahai.gay/blahai/haipkgs.git";
+      url = "github:blahai/haipkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    disko = {
+      url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -52,7 +57,7 @@
     };
   };
 
-  outputs = {nixpkgs, ...} @ inputs: {
+  outputs = {nixpkgs, disko, ...} @ inputs: {
     nixosConfigurations = {
       nyx = nixpkgs.lib.nixosSystem {
         specialArgs = {
@@ -79,6 +84,17 @@
         };
         modules = [
           ./hosts/artemis/configuration.nix
+        ];
+      };
+
+      theia = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = {
+          inherit inputs;
+        };
+        modules = [
+          disko.nixosModules.disko
+          ./hosts/theia/configuration.nix
         ];
       };
     };
